@@ -3,7 +3,7 @@
 > Final Year Capstone Project | React · Firebase · Gemini AI
 
 **Live Demo**: [https://capstone-project-kappa-mauve.vercel.app/](https://capstone-project-kappa-mauve.vercel.app/)  
-**Presentation**: [Watch on YouTube](https://www.youtube.com/)
+**Presentation**: [Watch on YouTube](https://youtu.be/ldB8Z27gqvk?si=2TuTDuKAseisKwOy)
 
 ---
 
@@ -98,7 +98,7 @@ The `vercel.json` in this repo handles SPA routing so page refreshes don't 404.
 
 ## 👥 Team
 
-Final Year Project - [Watch our presentation](https://www.youtube.com/) to see each member's contributions.
+Final Year Project - [Watch our presentation](https://youtu.be/ldB8Z27gqvk?si=2TuTDuKAseisKwOy) to see each member's contributions.
 
 ---
 
