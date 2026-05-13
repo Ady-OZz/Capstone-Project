@@ -1,0 +1,207 @@
+.dashboard-bg {
+  min-height: 100vh;
+  background: #F8F9FA url('https://www.transparenttextures.com/patterns/topography.png');
+  background-size: 400px 400px;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-navbar {
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(71,181,255,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 5vw 16px 5vw;
+}
+.dashboard-profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.dashboard-email {
+  color: #495057;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+.dashboard-avatar {
+  width: 40px;
+  height: 40px;
+  background: #4CA1AF;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+.dashboard-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0 0 0;
+}
+.dashboard-welcome {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #2C3E50;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.dashboard-cards {
+  display: flex;
+  gap: 5vw;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.dashboard-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(71,181,255,0.10);
+  padding: 36px 32px 32px 32px;
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  min-width: 260px;
+  max-width: 400px;
+}
+.dashboard-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 32px rgba(71,181,255,0.18);
+}
+.adventure-card {
+  background: linear-gradient(135deg, #4CA1AF 0%, #2C3E50 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.booking-card {
+  background: linear-gradient(135deg, #FF7E5F 0%, #FEB47B 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.dashboard-card-icon {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.compass-svg .compass-pulse {
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% { filter: drop-shadow(0 0 0 #fff); }
+  50% { filter: drop-shadow(0 0 12px #fff); }
+  100% { filter: drop-shadow(0 0 0 #fff); }
+}
+.suitcase-svg .suitcase-handle {
+  transform-origin: center;
+  animation: handleOpen 1.2s infinite alternate;
+}
+@keyframes handleOpen {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-20deg); }
+}
+.dashboard-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.dashboard-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #f8f9fa;
+}
+.dashboard-card ul li {
+  margin-bottom: 8px;
+  color: #fff;
+}
+.dashboard-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 32px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+}
+.adventure-btn {
+  background: linear-gradient(90deg, #4CA1AF 0%, #2C3E50 100%);
+  color: #fff;
+}
+.adventure-btn:hover {
+  background: linear-gradient(90deg, #2C3E50 0%, #4CA1AF 100%);
+}
+.booking-btn {
+  background: linear-gradient(90deg, #FF7E5F 0%, #FEB47B 100%);
+  color: #fff;
+}
+.booking-btn:hover {
+  background: linear-gradient(90deg, #FEB47B 0%, #FF7E5F 100%);
+}
+.dashboard-footer {
+  background: #fff;
+  color: #495057;
+  padding: 18px 0 12px 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 -2px 12px rgba(71,181,255,0.04);
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.dashboard-socials {
+  display: flex;
+  gap: 18px;
+  font-size: 1.4rem;
+  margin-top: 4px;
+}
+@media (max-width: 900px) {
+  .dashboard-cards {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+  .dashboard-content {
+    padding: 24px 0 0 0;
+  }
+}
+@media (max-width: 600px) {
+  .dashboard-navbar {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 2vw 8px 2vw;
+  }
+  .dashboard-content {
+    padding: 12px 0 0 0;
+  }
+  .dashboard-cards {
+    gap: 18px;
+  }
+  .dashboard-card {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 24px 8vw 20px 8vw;
+  }
+} 
